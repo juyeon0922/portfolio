@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INCEPTION</title>
+    <script src="./js/jquery-1.12.3.js"></script>
+    <script src="./js/inception.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background: rgb(225, 225, 225);
+            font-family: 'Nanum Pen Script', cursive;
+            position: relative;
+        }
+        a{
+            text-decoration: none;
+            color:#000;
+        }
+        .logo{
+        padding-left:20px;
+        }
+        nav{
+            display: flex;
+            flex-direction: column;
+            padding:20px;
+        }
+        nav a{
+            width:160px;
+            padding:50px 0px;
+            text-align: center;
+            font-size:2rem;
+            transition:0.5s
+        }
+        nav a:hover{
+            color:red;
+            transform: scale(1.1);
+        }
+        #work div{
+            display: flex;
+        }
+        header{
+            position:relative;
+        }
+        #work{
+            display: flex;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        #work h2{
+            position:absolute;
+            top:50px;
+            left:410px;
+            font-size: 1.3rem;
+        }
+        .banner{
+            position:absolute;
+            top:110px;
+            left:400px;
+        }
+        .banner img{
+            width:200px;
+            height:300px;
+        }
+        .txt{
+            position:absolute;
+            top:100px;
+            left:630px;
+        }
+        .txt li{
+            padding-bottom: 25px;
+            font-size: 1.1rem;
+            list-style:none;
+        }
+        .jul h2{
+            position:absolute;
+           transform: translateY(400px);
+        }
+        .jul a{
+            position:absolute;
+            top:520px;
+            left:400px;
+        }
+        .jul .p1{
+            position:absolute;
+            top:750px;
+            left:410px;
+            font-size:1.1rem;
+        }
+        .julpicture{
+            position:absolute;
+            top:850px;
+            left:400px;
+            
+        }
+        .jul1{
+            margin-right:50px;
+        }
+        .jul .p2{
+            position:absolute;
+            top:1050px;
+            left:410px;
+            font-size:1.1rem;
+            padding-top:10px;
+            padding-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="layout">
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="./images/logo.png" alt="inception logo"></a>
+            </div>
+            <nav>
+                <a href="work.html">작품소개</a>
+                <a href="character.html">작가소개</a>
+                <a href="character1.html">인물소개</a>
+                <a href="score.html">평점</a>
+                <a href="ost.html">ost</a>
+            </nav>
+        </header>
+    </div>
+    <div id="work">
+        <h2>작품소개</h2>
+        <div class="banner">
+            <a href="#"><img src="./images/포스터.jpg" alt="banner"></a>
+        </div>
+        <div class="txt">
+            <ul>
+                <li>개봉 : 2010.07.21</li>
+                <li>등급 : 12세 관람가</li>
+                <li>장르 : 액션,모험,SF,스릴러</li>
+                <li>국가 : 미국,영구</li>
+                <li>러닝타임 : 147분</li>
+                <li>배급 (주)디스테이션,워너 브러더스 코리아(주)</li>
+            </ul>
+        </div>
+        <div class="jul">
+            <h2>줄거리</h2>
+            <a href="https://tv.naver.com/v/11868621"><img src="./images/jul1.jpg" alt="하늘을 바라보는 한명의 남성사진"></a>
+            <p class="p1">
+                타인의 꿈에 들어가 생각을 훔치는 특수 보안요원 코브. 그를 이용해 라이벌 기업의 정보를 빼내고자 하는 사이토는
+                코브에게 생각을 훔치는 것이 아닌, 생각을 심는 '인셉션'작전을 제안한다.
+            </p>
+            <div class="julpicture">
+                <img src="./images/jul2.jpg" alt="총을 겨누는 남자와 쓰러진 남자" class="jul1">
+                <img src="./images/jul3.jpg" alt="공중에 몸이 뜬 남자 두명">
+            </div>
+            <p class="p2">
+                성공 조건으로 국제적인 수배자가 되어있는 코브의 신분을 바꿔주겠다는 거부할 수 업슨 제안을 하고, 사랑하는 아이들에게<br>
+                돌아가기 위해 그 제안을 받아들인다. 최강의 팀을 구성, 표적인 피셔에게 접근해서 '인셉션'작전을 실행하지만 예기치 못한
+                사건들과 마주하게 되는데 ...
+            </p>
+        </div>
+    </div>
+</body>
+</html>

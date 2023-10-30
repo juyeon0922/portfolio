@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INCEPTION</title>
+    <script src="./js/jquery-1.12.3.js"></script>
+    <script src="./js/inception.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <style>
+         body{
+            background: rgb(225, 225, 225);
+            font-family: 'Nanum Pen Script', cursive;
+            position: relative;
+        }
+        a{
+            text-decoration: none;
+            color:#000;
+        }
+        .logo{
+        padding-left:20px;
+        }
+        nav{
+            display: flex;
+            flex-direction: column;
+            padding:20px;
+        }
+        nav a{
+            width:160px;
+            padding:50px 0px;
+            text-align: center;
+            font-size:2rem;
+            transition:0.5s
+        }
+        nav a:hover{
+            color:red;
+            transform: scale(1.1);
+        }
+        header{
+            position:relative;
+        }
+        .score1 h1{
+            position:absolute;
+            top:50px;
+            left:410px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size:1.3rem;
+        }
+        .score1 img{
+            position:absolute;
+            top:150px;
+            left:410px;
+            width:500px;
+        }
+        .score2 h1{
+            position:absolute;
+            top:60px;
+            left:1100px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size:1.3rem;
+        }
+        #score .score2 form{
+            font-size:2rem;
+            font-family: 'Noto Sans KR', sans-serif;
+            position:absolute;
+            top:150px;
+            right:450px;
+        }
+        .score2 progress{
+            height:50px;
+            transform: translateY(-10px);
+            transform: translateX(10px);
+            -webkit-appearance:none;
+        }
+        .score2 ::-webkit-progress-bar{
+        background: #ffffff;
+        height:25px;
+        border-radius: 50px;
+        overflow:hidden;
+        }
+        .score2 ::-webkit-progress-value{
+            background:rgb(234, 43, 43);
+        }   
+       
+    </style>
+</head>
+<body>
+    <div id="layout">
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="./images/logo.png" alt="inception logo"></a>
+            </div>
+            <nav>
+                <a href="work.html">작품소개</a>
+                <a href="character.html">작가소개</a>
+                <a href="character1.html">인물소개</a>
+                <a href="score.html">평점</a>
+                <a href="ost.html">ost</a>
+            </nav>
+        </header>
+        </div>
+        <div id="score">
+            <div class="score1">
+                <h1>평점</h1>
+                <img src="./images/score.png" alt="관람객 평">
+            </div>
+            <div class="score2">
+                <h1>나이별 만족도</h1>
+                <form>
+                    <p>
+                        <label>10대</label>
+                        <progress value="98" max="100"></progress>
+                    </p>
+                    <p>
+                        <label>20대</label>
+                        <progress value="96" max="100"></progress>
+                    </p>
+                    <p>
+                        <label>30대</label>
+                        <progress value="95" max="100"></progress>
+                    </p>
+                    <p>
+                        <label>40대</label>
+                        <progress value="89" max="100"></progress>
+                    </p>
+                    <p>
+                        <label>50대</label>
+                        <progress value="88" max="100"></progress>
+                    </p>
+                </form>
+            </div>
+        </div>
+</body>
+</html>

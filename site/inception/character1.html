@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INCEPTION</title>
+    <script src="./js/jquery-1.12.3.js"></script>
+    <script src="./js/inception.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <style>
+         body{
+            background: rgb(225, 225, 225);
+            font-family: 'Nanum Pen Script', cursive;
+            position: relative;
+        }
+        a{
+            text-decoration: none;
+            color:#000;
+        }
+        .logo{
+        padding-left:20px;
+        }
+        nav{
+            display: flex;
+            flex-direction: column;
+            padding:20px;
+        }
+        nav a{
+            width:160px;
+            padding:50px 0px;
+            text-align: center;
+            font-size:2rem;
+            transition:0.5s
+        }
+        nav a:hover{
+            color:red;
+            transform: scale(1.1);
+        }
+        header{
+            position:relative;
+        }
+        #character1{
+            position:absolute;
+            top: 30px;
+            left:410px;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        #character1 h2{
+            font-size: 1.3rem;
+        }
+        #character1 img{
+            width:200px;
+            height:210px;
+            transition: 0.5s;
+        }
+        #character1 img:hover{
+            transform: scale(1.2);
+        }
+        #character1 h3{
+            font-size:1.3rem;
+        }
+        #character1 span{
+            font-size:1.2rem;
+        }
+        #character1  p{
+            font-size:1.1rem;
+        }
+        #character1 p a{
+            color:rgb(210, 134, 36);
+            text-decoration:underline;
+            font-size:1.4rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="layout">
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="./images/logo.png" alt="inception logo"></a>
+            </div>
+            <nav>
+                <a href="work.html">작품소개</a>
+                <a href="character.html">작가소개</a>
+                <a href="character1.html">인물소개</a>
+                <a href="score.html">평점</a>
+                <a href="ost.html">ost</a>
+            </nav>
+        </header>
+        </div>
+            <div id="character1">
+                <h2>인물소개</h2>
+                <div>
+                  <img src="./images/CH1.png" alt="레오나르도 디카프리오">
+                  <h3>레오나르도 디카프리오</h3>
+                  <span>"코브" 역</span>
+                  <p>꿈 속에 들어가 생각을 훔치는 특수 보안요원<br>꿈과 현실을 왔다 갔다 하는 인물로 <a href="totem.html" target="_blank">'토템'</a>을 필수로 지니고 다닌다.
+                    코브는 토템을 주로 돌려 토템이 계속 돌아가면 꿈, 멈추면 현실임을 파악한다.
+                </p>
+                </div>
+                <div>
+                  <img src="./images/CH2.png" alt="와타나베 켄">
+                  <h3>와타나베 켄</h3>
+                  <span>"사이토" 역</span>
+                  <p>사이토는 일본인이며, 거물급 인물로 상단한 재력과 권력을 지니고 있다.<br>코브가 사이토의 생각을 추출하여 사이토의 회사의 기밀정보를 빼려고했으나
+                    실패한다.<br>
+                    비록 사이토의 생각을 추출하는 건 실패했지만 사이토는 코브와 아서에게 역으로 인셉션 작전을 제안하며 인셉션에 직접 참여하기도 한다.
+                </p>
+                </div>
+                <div>
+                  <img src="./images/CH3.png" alt="조셉 고든 레빗">
+                  <h3>조셉 고든 레빗</h3>
+                  <span>"아서" 역</span>
+                  <p>아서는 포인트맨으로 생각을 추출할 표적과 주변 인물에 대한 사전 조사 및 추출 계획/아이디어 담당이다.<br>
+                    이 분야 업계 최고라는 평판을 지닐 정도로 일 처리는 완벽하지만 상상력이 부족한 고지식한 인물로 묘사된다.
+                </p>
+                </div>
+                <div>
+                  <img src="./images/CH4.png" alt="마리옹 꼬띠아르">
+                  <h3>마리옹 꼬띠아르</h3>
+                  <span>"맬" 역</span>
+                  <p>코브의 아내.<br>
+                    현실에선 죽었지만 코브의 잠재의식에서 더욱 강하게 등장하는 인물이다.
+                </p>
+                </div>
+                <div>
+                  <img src="./images/CH5.png" alt="엘리엇 페이지">
+                  <h3>엘리엇 페이지</h3>
+                  <span>"애리어든" 역</span>
+                  <p>훌륭한 설계자이다.<br>
+                    코브는 자신이 꿈을 설계하면 자꾸 멜이 방해하기 때문에 새로운 설계자를 구해야 했고, 꿈속에서는 애디어든이 건물을 창작하고 설계할 수 있다.<br>
+                    거꾸로 세상을 뒤집는 등 꿈속 세계에 들어온 지 얼마 안 되어서 멋진 창의력도 발휘한다.
+                </p>
+                </div>
+                <div>
+                  <img src="./images/CH6.png" alt="톰하디">
+                  <h3>레오나르도 디카프리오</h3>
+                  <span>"임스" 역</span>
+                  <p>
+                    도둑이자 위조사이다.<br>
+                    필적 위조든, 위장(변장)을 하는 인물로, 꿈에서 타깃이 되는 주변인물들의 관계를 파악해 위장한다.
+                </p>
+                </div>
+            </div>
+</body>
+</html>

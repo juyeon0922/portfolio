@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INCEPTION</title>
+    <script src="./js/jquery-1.12.3.js"></script>
+    <script src="./js/inception.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <style>
+         body{
+            background: rgb(225, 225, 225);
+            font-family: 'Nanum Pen Script', cursive;
+            position: relative;
+        }
+        a{
+            text-decoration: none;
+            color:#000;
+        }
+        .logo{
+        padding-left:20px;
+        }
+        nav{
+            display: flex;
+            flex-direction: column;
+            padding:20px;
+        }
+        nav a{
+            width:160px;
+            padding:50px 0px;
+            text-align: center;
+            font-size:2rem;
+            transition:0.5s
+        }
+        nav a:hover{
+            color:red;
+            transform: scale(1.1);
+        }
+        header{
+            position:relative;
+        }
+        #character{
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        #character h2{
+            top:30px;
+            left:410px;
+            font-size: 1.3rem;
+            position:absolute;
+        }
+        #character img{
+            position:absolute;
+            top:100px;
+            left:400px;
+            width:200px;
+            height:250px;
+        }
+        #character ul{
+            position:absolute;
+            top:90px;
+            left:650px;
+            list-style:none;
+            font-size: 1.1rem;
+        }
+        #character ul li:first-child{
+            padding-top:20px;
+        }
+        div h2{
+            top:400px;
+            left:410px;
+            font-size: 1.3rem;
+            position:absolute;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        div ul{
+            position:absolute;
+            top:450px;
+            left:390px;
+            list-style: none;
+            font-size:1.1rem;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="layout">
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="./images/logo.png" alt="inception logo"></a>
+            </div>
+            <nav>
+                <a href="work.html">작품소개</a>
+                <a href="character.html">작가소개</a>
+                <a href="character1.html">인물소개</a>
+                <a href="score.html">평점</a>
+                <a href="ost.html">ost</a>
+            </nav>
+        </header>
+        </div>
+        <div id="character">
+            <h2>작가소개</h2>
+            <img src="./images/character.jpg" alt="크리스토퍼 놀란 사진">
+            <ul>
+                크리스토퍼 놀란
+                <li>출생 : 1970.07.30 영국</li><br>
+                <li>신체 : 181cm</li><br>
+                <li>가족 : 배우자 엠마토머스, 동생 조나단 놀란</li><br>
+                <li>데뷔 : 1998년 영화 '미행'연출</li>
+            </ul>
+        </div>
+        <div>
+            <h2>수상경력</h2>
+            <ul>
+                <li>
+                    2018<br>
+                    제38회 런던 비평가 협회상 영국작품상 (덩케르크)<br>
+                    2017<br>
+                    제30회 시카고 비평가 협회상 감독상<br>
+                    2015<br>
+                    제10회 맥스무비 최고의 영화상 최고의 감독상<br>
+                    2011<br>
+                    제16회 크리틱스 초이스 시상식 액션영화상<br>
+                    2011<br>
+                    제26회 산타바바라 국제영화제 모던 마스터상<br>
+                    2011<br>
+                    제63회 미국 작가 조합상 각본상<br>
+                    2010<br>
+                    BAFTA LA 브리티아나 어워드 올해의 예술인상<br>
+                    2009<br>
+                    제35회 새턴 어워즈 최우수 각본상<br>
+                    2009<br>
+                    제35회 새턴 어워즈 최우수 액션, 모험, 스릴러상<br>
+                    2005<br>
+                    제31회 새턴 어워즈 최우수 각본상<br>
+                    2005<br>
+                    제31회 새턴 어워즈 최우수 판타지영화상<br>
+                    2003<br>
+                    제23회 런던 비평가 협회상 올해의 감독상<br>
+                    2002<br>
+                    제7회 크리틱스 초이스 시상식 각본상<br>
+                    2002<br>
+                    제11회 MTV영화제 신인 제작자상<br>
+                    2001<br>
+                    제21회 런던 비평가 협회상 올해의 작가상<br>
+                    2001<br>
+                    제14회 시카고 비평가 협회상 각본상<br>
+                    2001<br>
+                    제17회 선댄스영화제 왈도 설트 각본상<br>
+                    2001<br>
+                    제27회 LA 비평가 협회상 각본상<br>
+                    2001<br>
+                    보스턴 영화비평가협회 각본상<br>
+                    1999<br>
+                    슬램댄스 국제 영화제 블랙 앤 화이트상<br>
+                    1999<br>
+                    디나드 영국 영화제 실버 히치코크상<br>
+                    1999<br>
+                    제28회 로테르담 국제영화제 타이거상<br>
+                    1999<br>
+                    뉴포트 국제영화제 최우수 감독상<br>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
